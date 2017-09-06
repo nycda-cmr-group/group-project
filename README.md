@@ -1,10 +1,15 @@
 # group-project
 
-# steps
-clone the repo
-npm install
+Clone and NPM install
+```bash
+$ git clone
+$ npm install
+```
 
-#ensure you have a .env file with the sample example in your repo
+Create .env file and update credentials
+```bash
+$ touch .env
+```
 DB_PORT=<PORT>
 DB_URL=postgres://user:password@localhost:port/dbname
 DB_USER=<USER>
@@ -12,5 +17,5 @@ DB_PASSWORD=<YOUR PASSWORD>
 DB_NAME=<DB NAME>
 
 #start up the server
-node index.js 
+node index.js
 nodemon index.js
