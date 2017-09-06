@@ -2,11 +2,11 @@
   <a href="/posts/create">Add Posts</a>
 </div>
 <main>
-    <div class="articles__list">
+    <div class="posts__list">
       <% posts.forEach(function(post) { %>
         <div class="">
           <a href="/posts/<%= post.id %>">
-            <img src="<%= post.image_loc %>" alt="">
+            <img src="<%= post.image_url %>" alt="">
             <p><%- post.desc %></p>
           </a>
         </div>
