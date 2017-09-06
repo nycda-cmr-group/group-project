@@ -6,7 +6,7 @@ const port = process.env.DB_PORT || 8080;
 const db = require('./db/index.js');
 const postsController = require('./controller/posts.js')
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'ejs');
 

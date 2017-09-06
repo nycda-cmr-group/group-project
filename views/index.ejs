@@ -1,18 +1,10 @@
-
-
 <div class="links">
   <a href="/posts/create">Add Posts</a>
 </div>
 <main>
-    <div class="articles__list">
-      <% for(var i = 0; i < posts.length; i++) {%>
-      <img src="<% posts[i].image_loc %>" alt="">
-      <div class="">
-        <a href="/posts/<%= posts[i].id %>">
-          <img src="<% posts[i].image_loc %>" alt="">
-          <p><%= posts[i].desc %></p>
-        </a>
-      </div>
-      <% } %>
-    </div>
+  <div class="posts__list">
+    <% posts.forEach(function(post) { %>
+      <%- include('partials/posts-item', {posts: posts}); %>
+        <% }) %>
+  </div>
 </main>
