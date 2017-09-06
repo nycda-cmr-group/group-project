@@ -17,8 +17,9 @@ DB_USER=<USER>
 DB_PASSWORD=<YOUR PASSWORD>
 DB_NAME=<DB NAME>
 ```
+If connecting locally, ensure you the database created
 
-#start up the server
+Start up the server
 ```bash
 node index.js
 nodemon index.js

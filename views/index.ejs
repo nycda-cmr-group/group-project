@@ -1,0 +1,12 @@
+
+
+<div class="links">
+  <a href="/posts/create">Add Posts</a>
+</div>
+<main>
+    <div class="articles__list">
+        <% posts.forEach(function(item) { %>
+        <%- include('partials/posts-item', item); %>
+        <% }) %>
+    </div>
+</main>

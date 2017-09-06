@@ -1,14 +1,8 @@
 const util = require('util');
-
-//require the models
-const posts = require('../models/posts');
-const comments = require('../models/comments');
-const images = require('../models/images');
-const users = require('../models/users');
-const tags = require('../models/tags');
-
 const defaultMessage = 'Sorry having a problem finding those pesky articles.';
 const defaultTitle = `Hipstergram`;
+const tables = require('../models/index');
+const posts = require('../models/posts_func');
 
 module.exports.get = function(request, response) {
     posts.get(function(err, list) {
@@ -17,6 +11,6 @@ module.exports.get = function(request, response) {
             // make sure we only render once!!! so return
             return response.render('404', {message: message});
         }
-        response.render('index', {articles: list, title: defaultTitle});
+        response.render('index', {posts: list});
     })
 }
