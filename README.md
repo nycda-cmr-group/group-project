@@ -19,5 +19,7 @@ DB_NAME=<DB NAME>
 ```
 
 #start up the server
+```bash
 node index.js
 nodemon index.js
+```
