@@ -2,7 +2,7 @@ const util = require('util');
 const defaultMessage = 'Sorry having a problem finding those pesky articles.';
 const defaultTitle = `Hipstergram`;
 const tables = require('../models/index');
-const posts = require('../models/posts_func');
+const posts = require('../models/posts_repository');
 
 module.exports.get = function(request, response) {
     posts.get(function(err, list) {
