@@ -10,11 +10,13 @@ Create .env file and update credentials
 ```bash
 $ touch .env
 ```
+```bash
 DB_PORT=<PORT>
 DB_URL=postgres://user:password@localhost:port/dbname
 DB_USER=<USER>
 DB_PASSWORD=<YOUR PASSWORD>
 DB_NAME=<DB NAME>
+```
 
 #start up the server
 node index.js
