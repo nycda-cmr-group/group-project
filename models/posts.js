@@ -9,7 +9,7 @@ const Posts = sequelize.define('posts', {
     type: Sequelize.STRING
   },
   user_id: {
-    type: Sequelize.INTEGER
+  type: Sequelize.INTEGER
   }
 });
 

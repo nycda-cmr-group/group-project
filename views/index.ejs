@@ -2,9 +2,14 @@
   <a href="/posts/create">Add Posts</a>
 </div>
 <main>
-  <div class="posts__list">
-    <% posts.forEach(function(post) { %>
-      <%- include('partials/posts-item', {posts: posts}); %>
-        <% }) %>
-  </div>
+    <div class="articles__list">
+      <% posts.forEach(function(post) { %>
+        <div class="">
+          <a href="/posts/<%= post.id %>">
+            <img src="<%= post.image_loc %>" alt="">
+            <p><%- post.desc %></p>
+          </a>
+        </div>
+      <% }) %>
+    </div>
 </main>
