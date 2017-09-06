@@ -5,8 +5,14 @@
 </div>
 <main>
     <div class="articles__list">
-        <% posts.forEach(function(item) { %>
-        <%- include('partials/posts-item', item); %>
-        <% }) %>
+      <% for(var i = 0; i < posts.length; i++) {%>
+      <img src="<% posts[i].image_loc %>" alt="">
+      <div class="">
+        <a href="/posts/<%= posts[i].id %>">
+          <img src="<% posts[i].image_loc %>" alt="">
+          <p><%= posts[i].desc %></p>
+        </a>
+      </div>
+      <% } %>
     </div>
 </main>
