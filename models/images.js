@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const sequelize = require('../db');
 
 const Images = sequelize.define('images', {
-  image_loc: {
+  image_url: {
     type: Sequelize.STRING, allowNull:false
   },
   user_id: {

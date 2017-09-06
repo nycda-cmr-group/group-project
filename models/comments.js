@@ -3,7 +3,11 @@ const sequelize = require('../db');
 
 const Comments = sequelize.define('comments', {
   post_id: {
-    type: Sequelize.INTEGER
+    type: Sequelize.INTEGER,
+    references: {
+      model: 'posts',
+      key: 'id'
+    }
   },
   comments: {
     type: Sequelize.STRING
