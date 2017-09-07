@@ -1,15 +1,19 @@
-<div class="links">
-  <a href="/posts/create">Add Posts</a>
-</div>
+<% include globals/head %>
+<% include globals/header %>
+
 <main>
-    <div class="articles__list">
-      <% posts.forEach(function(post) { %>
-        <div class="">
-          <a href="/posts/<%= post.id %>">
-            <img src="<%= post.image_loc %>" alt="">
-            <p><%- post.desc %></p>
+  <div id="nav2">
+    <div id="content">
+      <div class="posts__list">
+        <% posts.forEach(function(post) { %>
+          <div class="">
+            <a href="/posts/<%= post.id %>">
+            <img src="<%= post.image_loc %>" class="postimage" alt="">
+              <p><%- post.desc %></p>
           </a>
-        </div>
+          </div>
+      </div>
       <% }) %>
     </div>
+  </div>
 </main>
