@@ -10,11 +10,13 @@ tables.Users.create({
     tables.Posts.create({
       user_id: user.id
     }).then(function(post) {
-      console.log(post)
+      tables.Comments.create({
+        post_id: post.id
+      }).then(function(post) {
+        tables.Tags.create({
+          post_id: post.id
+        })
+      })
     })
   }
 })
-
-// const post = tables.Posts.create({
-//
-// })

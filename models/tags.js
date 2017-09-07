@@ -7,10 +7,10 @@ const Tags = sequelize.define('tags', {
   },
   post_id: {
     type: Sequelize.INTEGER,
-    // references: {
-    //   model: 'posts',
-    //   key: 'id'
-    // }
+    references: {
+      model: 'posts',
+      key: 'id'
+    }
   }
 });
 
