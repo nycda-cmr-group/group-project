@@ -1,4 +1,4 @@
-const Posts = require('./posts')
+const Posts = require('./index').Posts
 
 //get all posts from posts table
 const get = function(callback) {
