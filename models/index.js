@@ -1,5 +1,7 @@
-const posts = require('../models/posts');
-const comments = require('../models/comments');
-const images = require('../models/images');
-const users = require('../models/users');
-const tags = require('../models/tags');
+module.exports = {
+  Posts: require('../models/posts'),
+  Comments: require('../models/comments'),
+  Images: require('../models/images'),
+  Users: require('../models/users'),
+  Tags: require('../models/tags'),
+}

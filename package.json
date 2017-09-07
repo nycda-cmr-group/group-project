@@ -13,10 +13,12 @@
   "author": "ryan, mei, chris",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "delete": "^1.1.0",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
+    "passport": "^0.4.0",
     "pg": "^7.3.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.8.0"
