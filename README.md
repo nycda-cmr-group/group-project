@@ -11,7 +11,8 @@ Create .env file and update credentials
 $ touch .env
 ```
 ```bash
-DB_PORT=<PORT>
+PORT=<Local Port>
+DB_PORT=<DB PORT>
 DB_URL=postgres://user:password@localhost:port/dbname
 DB_USER=<USER>
 DB_PASSWORD=<YOUR PASSWORD>
