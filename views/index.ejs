@@ -1,22 +1,19 @@
-<div class="links">
-  <a href="/posts/create">Add Posts</a>
-  <% if (typeof user !== 'undefined') { %>
-      <a href="/posts/create">Add Posts</a>
-      <a href="/logout">Logout | <%= user.firstName %></a>
-  <% } else { %>
-      <a href="/login">Login</a>
-      <a href="/user/signup">New User</a>
-  <% } %>
-</div>
+<% include globals/head %>
+<% include globals/header %>
+
 <main>
-    <div class="posts__list">
-      <% posts.forEach(function(post) { %>
-        <div class="">
-          <a href="/posts/<%= post.id %>">
-            <img src="<%= post.image_url %>" alt="">
-            <p><%- post.desc %></p>
+  <div id="nav2">
+    <div id="content">
+      <div class="posts__list">
+        <% posts.forEach(function(post) { %>
+          <div class="">
+            <a href="/posts/<%= post.id %>">
+            <img src="<%= post.image_loc %>" class="postimage" alt="">
+              <p><%- post.desc %></p>
           </a>
-        </div>
+          </div>
+      </div>
       <% }) %>
     </div>
+  </div>
 </main>
