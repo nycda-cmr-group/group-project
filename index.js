@@ -15,6 +15,8 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 app.get('/', postsController.get);
+app.get('/posts', postsController.get);
+app.get('/posts/:id', postsController.show);
 
 const server = app.listen(port, () => {
   console.log(`started port ${port}`);
