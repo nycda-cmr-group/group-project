@@ -11,9 +11,6 @@ const usersController = require('./controller/users.js')
 const parser = require('body-parser');
 const urlencodedParser = parser.urlencoded({ extended: false });
 
-const parser = require('body-parser');
-const urlencodedParser = parser.urlencoded({ extended: false });
-
 app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'ejs');
