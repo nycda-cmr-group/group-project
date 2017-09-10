@@ -7,7 +7,7 @@
           <% posts.forEach(function(post) { %>
             <div class="posts__list">
               <a href="/posts/<%= post.id %>">
-            <img src="<%= post.image_loc %>" class="postimage" alt="">
+            <img src="<%= post.image_url %>" class="postimage" alt="">
               <p><%- post.desc %></p>
               </a>
             </div>
