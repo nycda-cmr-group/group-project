@@ -1,19 +1,17 @@
 <% include globals/head %>
-<% include globals/header %>
+  <% include globals/header %>
 
-<main>
-  <div id="nav2">
-    <div id="content">
-      <div class="posts__list">
-        <% posts.forEach(function(post) { %>
-          <div class="">
-            <a href="/posts/<%= post.id %>">
+    <main>
+      <div id="nav2">
+        <div id="content">
+          <% posts.forEach(function(post) { %>
+            <div class="posts__list">
+              <a href="/posts/<%= post.id %>">
             <img src="<%= post.image_loc %>" class="postimage" alt="">
               <p><%- post.desc %></p>
-          </a>
-          </div>
+              </a>
+            </div>
+            <% }) %>
+        </div>
       </div>
-      <% }) %>
-    </div>
-  </div>
-</main>
+    </main>
